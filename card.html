@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .card{
+            width: 300px;
+            height: 439px;
+            background-color: #fff;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 1px 10px 1px #000;
+            display: inline-block;
+        }
+        .img{
+            background-color: black;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            padding: 5px;
+            transform: translate(90px, 90px);
+        }
+
+        .img img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .up_segemnt{
+            height: 190px;
+            background-color: whitesmoke;
+            padding: 20px;
+            padding-top: 78px;
+            text-align: center;
+        }
+
+        .up_segemnt h3, h4{
+            font-weight: lighter;
+        }
+        .up_segemnt h4{
+            opacity: .6;
+            color: #7f00ff;
+            font-weight: bold;
+        }
+
+        .up_segemnt button{
+            padding: 12px 20px;
+            background-color: violet;
+            font-family: monospace;
+            color: black;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all;
+        }
+
+        .up_segemnt button:hover{
+            background-color: palevioletred;
+            transition-duration: 1s;
+        }
+        .low_segment{
+            height: 140px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+        <div class="card">
+            <div class="low_segment">
+                <div class="img">
+                    <img src="img/minion.jpg" alt="">
+                </div>
+            </div>
+            <div class="up_segemnt">
+                <div>
+                    <h3><b>Minion</b></h3>
+                    <h4>Front-End-Developer</h4>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, modi.</p>
+                </div>
+                <div>
+                    <button>View Profile</button>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
